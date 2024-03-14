@@ -1,0 +1,79 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'corrier New', courier, monospace;
+   
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/02.jpg);
+    /*background: linear-gradient(180deg, #a0d66a, #356126 );*/
+}
+
+#stopwatch{
+    background-color: #262626;
+    background: rgba(33, 65, 64, 0.6);
+    padding: 2rem;
+    border-radius: 20px;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+#timer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(81, 159, 122);
+    height: 250px;
+    width: 250px;
+    border: 3px solid #68c9a4;
+    border-radius: 100%;
+    font-weight: 600;
+    font-size: 30px;
+    color: #d1efed;
+    margin-bottom: 1.5rem;
+    padding: 4rem;
+}
+
+#actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#actions button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    padding: .6rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #e0e7ff;
+    color:#262626;
+    cursor: pointer;
+    transition: background-colo .2s ease-in;
+}
+
+#actions button:hover{
+    background-color: #cdccdd;  
+}
+
+#mark-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    color: #ffffff;
+}
+
+#mark-list p:first-child{
+    margin-top: 1.5rem;
+}
